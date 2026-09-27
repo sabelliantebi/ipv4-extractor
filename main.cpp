@@ -12,7 +12,7 @@ static bool isTokenChar(char c)
 // maxDigits: max number of digits allowed
 // maxValue:  max value allowed
 // On success, pos moves after the digits and value has the number.
-static bool readNumber(const std::string& tok, size_t& pos, int maxDigits,unsigned long maxValue, unsigned long& value)
+static bool readNumber(const std::string& tok, size_t& pos, int maxDigits, unsigned long maxValue, unsigned long& value)
 {
     // First count the digits (before any math, so no overflow)
     size_t start = pos;
@@ -142,11 +142,11 @@ int main()
         if (extractIPv4(line, address, port))
         {
             std::cout << "Extracted IPv4 address: "
-            << ((address >> 16) & 255) << "."
-            << ((address >> 24) & 255) << "."
-            << ((address >> 8) & 255) << "."
-            << (address & 255)
-            << " (decimal value: " << address << ", port: ";
+                << ((address >> 24) & 255) << "."
+                << ((address >> 16) & 255) << "."
+                << ((address >> 8) & 255) << "."
+                << (address & 255)
+                << " (decimal value: " << address << ", port: ";
             if (port == -1)
                 std::cout << "none";
             else
