@@ -1,0 +1,4 @@
+ip
+*.out
+.DS_Store
+.vscode/
