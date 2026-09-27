@@ -2,7 +2,7 @@
 
 ## 1. Tools I used
 
-- **Claude** (claude.ai), model **Opus 5.5**. I used it in two ways:
+- **Claude** (claude.ai), model **Opus 5.5**. 
 - **Code generation:** I sent my prompt and Claude wrote the full program (`main.cpp`).
 
 - **Date:** September 27, 2026.
